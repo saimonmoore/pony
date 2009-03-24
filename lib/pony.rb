@@ -28,6 +28,7 @@ module Pony
 		mail.from = options[:from] || 'pony@unknown'
 		mail.subject = options[:subject]
 		mail.body = options[:body] || ""
+		mail.content_type = options[:content_type] || "text/plain"
 		mail
 	end
 
